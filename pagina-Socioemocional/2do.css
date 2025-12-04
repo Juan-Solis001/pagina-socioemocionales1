@@ -1,0 +1,121 @@
+/* ----------- ESTILO GENERAL ----------- */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #b3d9ff, #e6f2ff);
+  color: #222;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ----------- ENCABEZADO ----------- */
+
+.header-sec {
+  background: #0059b3;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #003d80;
+  animation: slideDown 0.7s ease-out;
+}
+
+.header-sec h1 {
+  margin: 0;
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+}
+
+/* Animación del encabezado */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ----------- CONTENEDOR PRINCIPAL ----------- */
+
+.contenedor {
+  max-width: 1000px;
+  margin: 30px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 1s ease;
+}
+
+/* ----------- TITULOS ----------- */
+
+.contenedor h2,
+.contenedor h3 {
+  color: #003d80;
+  text-align: center;
+}
+
+/* ----------- PARRAFOS ----------- */
+
+.contenedor p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* ----------- MEDIA (VIDEO / AUDIO / IMÁGENES) ----------- */
+
+.media-box {
+  width: 100%;
+  max-width: 900px;
+  margin: 25px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #cce6ff;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+  animation: fadeIn 1.2s ease;
+}
+
+.media-box video,
+.media-box audio {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ----------- BOTÓN DE REGRESO A INICIO ----------- */
+
+.btn-regresar {
+  display: block;
+  width: 220px;
+  margin: 40px auto 0;
+  padding: 12px;
+  background: #0059b3;
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-regresar:hover {
+  background: #007fff;
+  transform: scale(1.05);
+}
+
+/* ----------- PIE DE PÁGINA ----------- */
+
+.footer-sec {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background: #e6f2ff;
+  color: #003d80;
+  border-top: 3px solid #99c2ff;
+  font-size: 0.95rem;
+}
